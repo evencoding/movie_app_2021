@@ -1,0 +1,36 @@
+# favicon.ico 브라우져 title 왼쪽의 아이콘
+
+React란 내가 거기에 쓰는 모든 요소를 생성한다는 것
+JavaScript와 함께 그것들을 만들고 HTML로 밀어 넣는다
+
+App.js component를 index.js에 넣음
+
+ReactDOM.render안에있는 <App />를 기본적으로 컴포넌트라고 한다
+React는 component를 사용해서 HTML처럼 작성하려는 경우에 필요하다
+javascript와 HTML 사이의 이러한 조합을 jsx라고 부름
+React Application은 하나의 component만을 rendering해야한다.
+
+jsx에서 두번째로 이해해야 하는것은, component에 정보를 보낼 수 있다는 점!
+
+props안에는 {true}, {["hello", 1, 2, 3, 4, true]}처럼 여러 자료형을 넣을 수 있다
+
+
+Function component는 function이고 뭔가를 return하고 screen에 표시됨
+class component는 class임 하지만 react component로부터 확장되고 screen에 표시됨
+    render(){
+        return
+    } 으로 내보냄
+    React는 자동적으로 모든 class component의 render method를 실행하고자 함
+# state
+    state는 object이고 component의 data를 넣을 공간이 있고 이 데이터는 변함
+
+오브젝트가 class component에 있을땐 this.~~
+
+component life cycle : constructor -> render -> componentDidMount -> 
+componentDidUpdate(내가 setState를 불렀을 때) -> componentWillUnmount(페이지 이동 등)
+
+# Axios == fetch 위에 있는 작은 layer
+    axios는 npm i axios로 설치해줘야함
+    axios.get 가 항상 빠른 것은 아니기 때문에
+    JS 에게 기다리라는 요청(async)을 해야한다.
+    이때 무엇을 기다릴것인지는 기다릴 것 앞에 await를 써서 알려준다
